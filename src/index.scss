@@ -1,0 +1,160 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  overflow: hidden;
+  color: #fff;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+}
+
+input {
+  background-color: #ffffff60;
+  border: 1px solid #b6b6b6;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: x-large;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  width: calc(100% - 10px);
+  &:focus {
+    outline: none;
+  }
+}
+
+.z-1 {
+  z-index: 1;
+}
+.z-0 {
+  z-index: 0;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+th {
+  cursor: pointer;
+  background: #a84343;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+}
+
+td {
+  color: #000000;
+}
+tbody {
+  &:nth-child(even) {
+    background-color: #b6b6b6;
+  }
+  &:nth-child(odd) {
+    background-color: #dadada;
+  }
+  &:hover {
+    background-color: #7f7f7f;
+    cursor: pointer;
+  }
+}
+
+.Card {
+  padding: 30px;
+  border: 1px solid #b6b6b6;
+  border-radius: 20px;
+  background-color: #7d7d7d6b;
+  margin: 30px;
+}
+
+.Particles {
+  position: absolute;
+  z-index: 0;
+}
+
+.BackgroundShape {
+  position: absolute;
+
+  right: 0px;
+  bottom: 0;
+  opacity: 0.3;
+  filter: blur(200px);
+  -webkit-filter: blur(200px);
+}
+
+button {
+  padding: 10px;
+  font-size: larger;
+  border: 0px;
+  border-radius: 5px;
+  color: #fff;
+  background: linear-gradient(-45deg, #cc0909, #a84343);
+}
+
+.Login {
+  max-width: 300px;
+  .UserImage {
+  }
+
+  .User {
+    gap: 20px;
+    margin-bottom: 25px;
+    .Title {
+      margin-bottom: 10px;
+    }
+  }
+
+  .Password {
+    gap: 20px;
+    .Title {
+      margin-bottom: 10px;
+    }
+
+    input {
+      margin-bottom: 5px;
+    }
+
+    .ValidationMs {
+      height: 30px;
+      font-size: x-small;
+      color: #cc0909;
+      word-break: break-all;
+    }
+  }
+  .ButtonContainer {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.Search {
+  .Title {
+    margin-bottom: 10px;
+  }
+  .SearchBar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+}
+.Ship {
+  position: absolute !important;
+  overflow: hidden !important;
+  bottom: 0 !important;
+  background-color: transparent !important;
+}
