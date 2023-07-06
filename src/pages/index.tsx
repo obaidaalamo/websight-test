@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Model3D } from "../utils/ModelRoboot";
 import validator from "validator";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
   const [useName, setUseName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [validatorState, setValedatorState] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   const validatePassword = (value: string) => {
     if (
@@ -18,6 +20,7 @@ export const Login = () => {
       })
     ) {
       setValedatorState(false);
+      navigate("/dashboard");
     } else {
       setValedatorState(true);
     }
